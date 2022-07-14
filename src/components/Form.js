@@ -8,6 +8,11 @@ function Form() {
     }
 
     const onSubmit = () => {
+
+        if (form.fullname === "" || form.phone === "") {
+            return false
+        }
+
         console.log(form)
     }
 
